@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Telangana Farmer Schemes</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+<header class="bar"><b data-t>Telangana Farmer Schemes</b><span><a href="complaint.html" data-t>Complaint</a><button id="logout" type="button" data-t>Log out</button></span></header>
+<section class="hero">
+  <div class="wrap">
+    <p class="hi"><span data-t>Welcome,</span> <strong id="who"></strong></p>
+    <p id="summary" class="sum"></p>
+    <ol id="scale" class="scale"></ol>
+  </div>
+  <div class="rows"></div>
+</section>
+<main>
+  <a class="linkbtn" href="complaint.html" data-t>Did not get your subsidy money? Raise a complaint</a>
+  <div class="tabs" role="tablist">
+    <button class="tab" id="t-mine" data-tab="mine" role="tab" aria-selected="true"></button>
+    <button class="tab" id="t-all" data-tab="all" role="tab" aria-selected="false"></button>
+  </div>
+  <nav id="chips" class="chips"></nav>
+  <section id="groups"></section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

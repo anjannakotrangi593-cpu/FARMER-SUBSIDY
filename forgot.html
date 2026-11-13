@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reset password | Telangana Farmer Schemes</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="forgot">
+<div class="auth">
+  <aside class="field">
+    <b class="mark" data-t>Telangana Farmer Schemes</b>
+    <h2 data-t>See every scheme your land qualifies for.</h2>
+    <p><span id="count"></span> <span data-t>state and central schemes, with the documents you need and the official apply link.</span></p>
+  </aside>
+  <main class="panel">
+    <h1 data-t>Reset your password</h1>
+    <p class="lead" data-t>Enter your mobile number, name and land area exactly as given at registration.</p>
+    <form id="form" novalidate>
+      <label><span data-t>Mobile number</span> <input id="mobile" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel"></label>
+      <label><span data-t>Name</span> <input id="name" autocomplete="name"></label>
+      <label><span data-t>Land area in acres (as given at registration)</span> <input id="land" type="number" inputmode="decimal" min="0" step="0.01"></label>
+      <label><span data-t>New password</span> <input id="pass" type="password" autocomplete="new-password"></label>
+      <label><span data-t>Confirm new password</span> <input id="confirm" type="password" autocomplete="new-password"></label>
+      <button class="main" type="submit" data-t>Reset password</button>
+      <p id="msg" class="msg" role="alert"></p>
+    </form>
+    <p class="alt"><a href="login.html" data-t>Back to log in</a></p>
+  </main>
+</div>
+<script src="js/data.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

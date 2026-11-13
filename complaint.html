@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raise a complaint | Telangana Farmer Schemes</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="complaint">
+<header class="bar"><b data-t>Telangana Farmer Schemes</b><span><button id="logout" type="button" data-t>Log out</button></span></header>
+<main>
+  <a class="back" href="dashboard.html" data-t>Back to schemes</a>
+  <h1 data-t>Raise a complaint</h1>
+  <p class="lead" data-t>Applied for a scheme but did not get your subsidy money in the expected time? Tell us what happened.</p>
+  <form id="form" novalidate>
+    <label><span data-t>Scheme you applied for</span> <select id="scheme"></select></label>
+    <label><span data-t>What is the problem?</span> <select id="type"></select></label>
+    <label><span data-t>Date you applied</span> <input id="appDate" type="date"></label>
+    <label><span data-t>Application or reference number (if you have it)</span> <input id="appNo"></label>
+    <label><span data-t>Describe the problem</span> <textarea id="details" rows="5" data-tp placeholder="Example: I applied on the official site, the status shows approved, but the money has not come to my bank account."></textarea></label>
+    <p id="msg" class="msg" role="alert"></p>
+    <button class="main" type="submit" data-t>Submit complaint</button>
+  </form>
+  <p class="fine" data-t>Also meet your Mandal Agriculture Officer or Rythu Vedika officer with your application details, so the official record can be checked.</p>
+  <h2 data-t>My complaints</h2>
+  <section id="my-list"></section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
